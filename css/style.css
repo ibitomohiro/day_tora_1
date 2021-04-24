@@ -178,3 +178,98 @@ footer {
   font-size: 12px;
   float: right;
 }
+
+
+/* スマホ用の表示 */
+
+@media only screen and (max-width:767px) {
+/* スマホ用 header */
+
+  .clear::after {
+    content: none;
+  }
+
+  .header-left {
+    float: none;
+  }
+  .header-title {
+    text-align: center;
+  }
+  .header-right {
+    float: none;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-nav-item {
+    float: none;
+    margin-left: 0;
+  }
+
+  /* top */
+
+  top{
+    padding: 120px 0;
+  }
+
+  .top-title {
+    font-size: 32px;
+  }
+
+  .top-subtitle {
+    font-size: 14px;
+  }
+  /* sectionの共通クラス */
+  .section {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .section p {
+    font-size: 14px;
+  }
+  
+  /* about */
+  .about-left {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-right {
+    float: none;
+    width: 100%;
+  }
+  /* course */
+  /* wrapperを超えてしまったときに自動的に改行をいれてくれるプロパティ↓*/
+  .course-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .course-item {
+    width: 100%;
+    margin: 20px;
+  }
+
+  /* countact */
+
+  .input[type="email"] {
+    widows: 100%;
+  }
+
+  /* footer */
+  .copyright {
+    font-size: 10px;
+    float: none;
+    text-align: center;
+  }
+
+
+}
