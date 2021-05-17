@@ -7,6 +7,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="./css/reset.css"> <!--reset.cssを先に書くようにする-->
   <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="./practice.js"></script>
 </head>
 <body>
   <header>
@@ -17,7 +19,12 @@
       <div class="header-right">
         <ul class="header-nav clear">
           <li class="header-nav-item"><a href="#">デイトラとは</a></li>
-          <li class="header-nav-item"><a href="#">コース一覧</a></li>
+          <li class="header-course header-nav-item"><a href="#">コース一覧</a></li>
+          <ul class="header-toggle">
+            <li>初級</li>
+            <li>中級</li>
+            <li>上級</li>
+          </ul>
           <li class="header-nav-item"><a href="#">お問い合わせ</a></li>
         </ul>
       </div>
@@ -76,6 +83,7 @@
         <button type="submit" class="btn btn-register">無料ではじめる</button>
       </form>
     </div>
+    <div id="page_top"><a href="#">TOP</a></div>
   </section>
 
   <footer>
