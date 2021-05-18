@@ -20,3 +20,13 @@ $(function(){
     $('body, html').animate({ scrollTop: 0 }, 500);
   });
 });
+
+$(function () {
+  $(".course-item img").click(function () {
+      $("#graydisplay").html($(this).prop('outerHTML'));
+      $("#graydisplay").fadeIn(200);
+  });
+  $("#graydisplay, #graydisplay img").click(function () {
+      $("#graydisplay").fadeOut(200);
+  });
+});
